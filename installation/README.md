@@ -138,9 +138,9 @@ call plug#end()
    
    # 输出：v15.12.0，/usr/local/nvm/versions/node/v15.12.0/bin/node
    # 这时看到已经安装新版本，但是 -v 输出还是老版本，是因为尚未激活，在PATH中将新版本的所处路径放到老版本前面即可
-   export PATH=/usr/local/bin/:$PATH
+   export PATH=/usr/local/bin:$PATH
    node -v 
-   v16.15.1
+   # 输出: v16.15.1
    ```
 
 #### 安装coc拓展

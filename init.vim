@@ -10,18 +10,24 @@ call plug#end()
 " Plugins END
 
 " General Settings
+
 " set relativenumber " set rnu/nornu
 set number " set nu/nonu
 set autoindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set foldmethod=indent
+set foldlevelstart=99
 " set foldmethod="expr"
 " set foldexpr="nvim_treesitter#foldexpr()"
 " set foldenable=false
-" set foldlevel=99
 " noremap se :set splitbelow<CR>:split<CR>
 noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
+
+" remove highlights after search
+noremap <LEADER><LEADER><CR> :noh<CR>  
+
 " General Settings End
 
 " vim-terminal 
