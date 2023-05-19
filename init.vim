@@ -1,4 +1,5 @@
 " Plugins
+let g:plug_url_format = 'git@github.com:%s.git'
 call plug#begin()
 Plug 'neoclide/coc.nvim'
 Plug 'scrooloose/nerdtree'
@@ -7,6 +8,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'skywind3000/vim-terminal-help'
 call plug#end()
+unlet g:plug_url_format
 " Plugins END
 
 " General Settings
